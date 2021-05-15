@@ -16,8 +16,8 @@ def play20_1(s, c):
     elif (s< win and c == 3) or s >= win:
         return False
     elif c % 2 == 0:
-        return play20_2(s + 1, c + 1) or play20_2(s * 4, c + 1)
-    return play20_2(s + 1, c + 1) and play20_2(s * 4, c + 1)
+        return play20_1(s + 1, c + 1) or play20_1(s * 4, c + 1)
+    return play20_1(s + 1, c + 1) and play20_1(s * 4, c + 1)
 
 def play21_1(s, c):
     global win
@@ -26,8 +26,8 @@ def play21_1(s, c):
     elif (s < win and c == 4) or s >= win:
         return False
     elif c % 2 == 1:
-        return play21_2(s + 1, c + 1) or play21_2(s * 4, c + 1)
-    return play21_2(s + 1, c + 1) and play21_2(s * 4, c + 1)
+        return play21_1(s + 1, c + 1) or play21_1(s * 4, c + 1)
+    return play21_1(s + 1, c + 1) and play21_1(s * 4, c + 1)
 
 
 # 2 heaps
